@@ -1,0 +1,42 @@
+{
+    "name": "abbotton/esign",
+    "description": "根据e签宝官方demo封装的PHP扩展包",
+    "keywords": [
+        "abbotton",
+        "esign",
+        "e签宝"
+    ],
+    "homepage": "https://github.com/abbotton/esign",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Abbotton",
+            "email": "uctoo@foxmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Abbotton\\Esign\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Abbotton\\Esign\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
